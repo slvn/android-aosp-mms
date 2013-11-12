@@ -24,6 +24,7 @@ LOCAL_STATIC_JAVA_LIBRARIES += android-common-chips
 LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, $(res_dirs))
 LOCAL_AAPT_FLAGS := --auto-add-overlay
 LOCAL_AAPT_FLAGS += --extra-packages com.android.ex.chips
+LOCAL_AAPT_FLAGS += --custom-package com.android.mms
 
 LOCAL_REQUIRED_MODULES := SoundRecorder
 
