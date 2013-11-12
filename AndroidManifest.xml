@@ -18,9 +18,14 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="fr.slvn.mms">
+        package="fr.slvn.mms"
+        android:versionCode="20"
+        android:versionName="1.0">
 
     <!-- <original-package android:name="com.android.mms" /> -->
+    <uses-sdk android:minSdkVersion="19"
+              android:targetSdkVersion="19"
+              android:maxSdkVersion="19" />
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
