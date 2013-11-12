@@ -27,7 +27,7 @@
         <intent
             android:action="android.provider.Telephony.ACTION_CHANGE_DEFAULT"
             android:targetPackage="com.android.settings">
-            <extra android:name="package" android:value="com.android.mms"/>
+            <extra android:name="package" android:value="fr.slvn.mms"/>
         </intent>
     </Preference>
     <Preference
