@@ -19,8 +19,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         package="fr.slvn.mms"
-        android:versionCode="21"
-        android:versionName="1.1">
+        android:versionCode="22"
+        android:versionName="1.2">
 
     <!-- <original-package android:name="com.android.mms" /> -->
     <uses-sdk android:minSdkVersion="19"
@@ -301,7 +301,7 @@
         <provider android:name="com.android.mms.SuggestionsProvider"
             android:exported="true"
             android:readPermission="android.permission.READ_SMS"
-            android:authorities="com.android.mms.SuggestionsProvider" >
+            android:authorities="fr.slvn.mms.SuggestionsProvider" >
             <path-permission
                     android:pathPrefix="/search_suggest_query"
                     android:readPermission="android.permission.GLOBAL_SEARCH" />
@@ -323,7 +323,7 @@
 
         <provider android:name="com.android.mms.TempFileProvider"
                   android:exported="true"
-                  android:authorities="mms_temp_file"
+                  android:authorities="fr.slvn.mms_temp_file"
                   android:multiprocess="true" />
 
         <activity android:name="com.android.mms.ui.MiniPreferenceActivity" >

@@ -38,7 +38,7 @@ import android.text.TextUtils;
  */
 public class SuggestionsProvider extends android.content.ContentProvider {
 
-    final static String AUTHORITY = "com.android.mms.SuggestionsProvider";
+    final static String AUTHORITY = "fr.slvn.mms.SuggestionsProvider";
 //    final static int MODE = DATABASE_MODE_QUERIES + DATABASE_MODE_2LINES;
 
     public SuggestionsProvider() {

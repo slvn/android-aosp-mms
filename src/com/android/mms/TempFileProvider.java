@@ -25,12 +25,12 @@ public class TempFileProvider extends ContentProvider {
     /**
      * The content:// style URL for this table
      */
-    public static final Uri SCRAP_CONTENT_URI = Uri.parse("content://mms_temp_file/scrapSpace");
+    public static final Uri SCRAP_CONTENT_URI = Uri.parse("content://fr.slvn.mms_temp_file/scrapSpace");
 
     private static final int MMS_SCRAP_SPACE = 1;
     private static final UriMatcher sURLMatcher = new UriMatcher(UriMatcher.NO_MATCH);
     static {
-        sURLMatcher.addURI("mms_temp_file", "scrapSpace", MMS_SCRAP_SPACE);
+        sURLMatcher.addURI("fr.slvn.mms_temp_file", "scrapSpace", MMS_SCRAP_SPACE);
     }
 
     @Override
