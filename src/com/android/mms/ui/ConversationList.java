@@ -487,7 +487,7 @@ public class ConversationList extends ListActivity implements DraftCache.OnDraft
         if (cellBroadcastItem != null) {
             // Enable link to Cell broadcast activity depending on the value in config.xml.
             boolean isCellBroadcastAppLinkEnabled = this.getResources().getBoolean(
-                    com.android.internal.R.bool.config_cellBroadcastAppLinks);
+                    this.getResources().getSystem().getIdentifier("config_cellBroadcastAppLinks", "bool", "android"));
             try {
                 if (isCellBroadcastAppLinkEnabled) {
                     PackageManager pm = getPackageManager();

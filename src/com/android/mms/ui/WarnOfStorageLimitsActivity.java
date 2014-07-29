@@ -53,7 +53,7 @@ public class WarnOfStorageLimitsActivity extends Activity implements DialogInter
         // Can't set this theme in the manifest. The resource compiler complains the
         // resource is internal and not visible. Without setting this theme, the window
         // gets a double window outline.
-        this.setTheme(com.android.internal.R.style.Theme_Dialog_Alert);
+        this.setTheme(this.getResources().getSystem().getIdentifier("Theme_Dialog_Alert", "style", "android"));
 
         super.onCreate(savedInstanceState);
 

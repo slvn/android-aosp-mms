@@ -351,7 +351,7 @@ public class SlideEditorActivity extends Activity {
 
         // Preview slideshow.
         menu.add(0, MENU_PREVIEW_SLIDESHOW, 0, R.string.preview_slideshow).setIcon(
-                com.android.internal.R.drawable.ic_menu_play_clip);
+                this.getResources().getSystem().getIdentifier("ic_menu_play_clip", "drawable", "android"));
 
         // Text
         if (slide.hasText() && !TextUtils.isEmpty(slide.getText().getText())) {
