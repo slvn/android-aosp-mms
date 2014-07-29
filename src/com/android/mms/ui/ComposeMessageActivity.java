@@ -628,7 +628,11 @@ public class ComposeMessageActivity extends Activity
             hideKeyboard();
         }
 
-        super.startActivityForResult(intent, requestCode);
+        try {
+            super.startActivityForResult(intent, requestCode);
+        } catch (Exception e) {
+            Toast.makeText(this, "Activity not available", Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void showConvertToMmsToast() {
